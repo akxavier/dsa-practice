@@ -7,7 +7,7 @@ T Ret_Max(T x, T y) {
 }
 
 int main() {
-	cout << "Greater among 8 and 3 is: " << Ret_Max(8, 3) << endl;
-	cout << "Greater among g and t is: " << Ret_Max('g', 't') << endl;
+	cout << "Greater among 8 and 3 is: " << Ret_Max<int>(8, 3) << endl;		//call Ret_Max for int
+	cout << "Greater among g and t is: " << Ret_Max<char>('g', 't') << endl;	//call Ret_Max for char
 	return 0;
 }
